@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RPMarketBubbleView">
+            <rect key="frame" x="0.0" y="0.0" width="229" height="79"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2_marketBubbleBg" translatesAutoresizingMaskIntoConstraints="NO" id="rsJ-A1-rtv">
+                    <rect key="frame" x="0.0" y="0.0" width="229" height="79"/>
+                    <animations/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" fixedFrame="YES" text="信特超市" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P18-JI-dmp">
+                    <rect key="frame" x="43" y="8" width="60" height="18"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.98431372549999996" green="0.35686274509999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="营业时间：9：00-23：00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHn-d9-0eS">
+                    <rect key="frame" x="8" y="51" width="149" height="16"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20元起配送" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vae-dg-XYs">
+                    <rect key="frame" x="8" y="32" width="67" height="16"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="平均送达：20分钟" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cry-jJ-z9U">
+                    <rect key="frame" x="85" y="32" width="106" height="16"/>
+                    <animations/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.50588235290000005" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2_rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="gdy-Ku-c5b">
+                    <rect key="frame" x="205" y="32" width="16" height="16"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2_opening_small" highlightedImage="2_closing_small" translatesAutoresizingMaskIntoConstraints="NO" id="DmN-SL-S9q">
+                    <rect key="frame" x="8" y="2" width="30" height="30"/>
+                    <animations/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="50q-wh-613" customClass="RPUserLevelView">
+                    <rect key="frame" x="111" y="8" width="98" height="19"/>
+                    <animations/>
+                </imageView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="averArrivalTimeLbl" destination="Cry-jJ-z9U" id="MfR-F3-eum"/>
+                <outlet property="nameLbl" destination="P18-JI-dmp" id="tRA-Qr-3mV"/>
+                <outlet property="openStateImageView" destination="DmN-SL-S9q" id="GvL-Jk-lI5"/>
+                <outlet property="scoreView" destination="50q-wh-613" id="hzS-Nh-9oD"/>
+                <outlet property="startSendLbl" destination="Vae-dg-XYs" id="ky6-cN-woh"/>
+                <outlet property="workingTimeLbl" destination="nHn-d9-0eS" id="e8F-6P-4yQ"/>
+            </connections>
+            <point key="canvasLocation" x="-24.5" y="-110.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="2_closing_small" width="30" height="19"/>
+        <image name="2_marketBubbleBg" width="229" height="79"/>
+        <image name="2_opening_small" width="30" height="30"/>
+        <image name="2_rightArrow" width="16" height="16"/>
+    </resources>
+</document>
